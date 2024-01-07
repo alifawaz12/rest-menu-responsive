@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+:root{
+    ---backcolor:#EBEBEB;
+    ---cardcolor:#940016;
+    ---navcolor:#c0c0c0cc;
+}
+
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: var(---cardcolor);
+    border-style: none;
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.sec{
+    overflow-x: hidden;
+    width: 100%;
+}
+#phone{
+    width:1.5rem;
+}
+#menu-hum{
+    width: 2.3rem;
+    padding: 0rem 1rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#call{
+    padding: 0.1rem;
+    border-radius: 10px;
+}
+
+#title-sec{
+    position: relative;
+    background: linear-gradient(0deg, var(---cardcolor) 0.1%, #ff105400 99%), url(https://pixelz.cc/wp-content/uploads/2018/08/grilled-steak-uhd-4k-wallpaper.jpg);
+    background-position: center; 
+    background-repeat: none;
+    background-size: cover;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.title-txt{
+    position: absolute;
+    bottom: 26%;
+    font-weight: 900;
+    color: var(---backcolor);
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1.5rem;
+    backdrop-filter: blur(22px);
+    border-radius: 15px;
+
+}
+nav{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between !important;
+    background-color: #ffffff00;
+    padding: 0.5rem;
+    transition: all 250ms;
+}
+nav > h1,
+nav > div > h1{
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    color: #FFF;
+    font-weight: 800;
+}
+nav > div{
+    display: flex;
+    background-color: var(---cardcolor);
+    margin: 0.2rem;
+
+}
+.item-categ{
+    width : 3rem;
+}
+#categories-wrapper{
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 0rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.categ-card{
+    cursor: pointer;
+    box-shadow: 0px 0px 1rem  #ffffffaf;
+    align-items: center;
+    background-color: #ebebebb6;
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 100vw;
+    padding: 0.8rem;
+}
+.title-categ{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #940016;
+    font-weight: 500;
+}
+.takeme{
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+.food-pic{
+    background: url(https://purepng.com/public/uploads/large/purepng.com-burgersandwhichfoodbreadcaviarburgerdelicious-21526117612dsith.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 500ms;
+
+    border-radius: 20px;
+
+}
+.category-title{
+    display: flex;
+    justify-content: center;
+
+}
+.catego-titleh2::after{
+    content: "";
+    width: 100%;
+    border: 1px solid white;
+    position: absolute;
+    transform-origin: center;
+    bottom: -25%;
+    left: 0;
+}
+.catego-titleh2{
+    font-size: 1.5rem;
+    position: relative;
+    width: fit-content;
+
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.category{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+
+}
+.food-card{
+    display: grid;
+    grid-template-columns: 0.75fr 1.5fr 0.25fr;
+    grid-template-rows: 1fr;
+    min-height: 4rem;
+}
+.cardwrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebebb6;
+    border-radius: 25px;
+    height: 4rem;
+    overflow: hidden;
+    padding: 1rem;
+    transition: height ease-in-out 500ms;
+    position: relative;
+}
+.food-title{
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(---cardcolor);
+}
+.food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.food > h2{
+    transition: all ease-in-out 500ms;
+}
+.food-prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.change-arrow{
+    width: 2rem;
+    transform: rotateX(180deg);
+    transition: transform ease-in-out 500ms,
+    position ease-in-out 500ms;
+}
+.card-detials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease-in-out 500ms;
+
+}
+.ingred{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.larger{
+    height: 15rem;
+}
+.larger > .card-detials{
+    opacity: 1;
+}
+.larger > div > div > img{
+    position: absolute;
+    width: 2rem;
+    bottom: 5%;
+    right: 5%;
+    transform: rotateX(0deg);
+}
+.larger > div{
+    display: flex;
+    justify-content: center;
+}
+.larger > div > .food > h2{
+    font-size: 1.7rem;
+    color: var(---cardcolor);
+    text-align: center;
+}
+.prices > h1 {
+    font-size: 1.7rem;
+    color:var(---cardcolor);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.prices{
+    position: absolute;
+    top :15%;
+    right:5%;
+}
+.larger > div > .food-pic{
+    display: none;
+}
+.larger > div > .food{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+
+}
+.rate{
+    position: absolute;
+    bottom: 30%;
+    right: 1%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+.star-img{
+    display: block;
+    position: static !important;
+    width: 3rem !important;
+    padding: 0rem 0.3rem;
+}
+.star{
+    display: flex;
+
+}
+.filled-star{
+    display: none;
+}
+.change{
+    background: #ffffff86;
+    backdrop-filter: blur(10px);
+}
